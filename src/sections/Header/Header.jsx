@@ -2,11 +2,11 @@
 import React, { Component } from 'react';
 import './Header.css';
 import Logo from '../../assets/images/logo.png'
-import Navitem,{NavitemDropDown} from '../NavItem/Navitem'
+import Navitem,{NavitemDropDown} from '../../components/NavItem/NavItem'
 const Header=(props)=> {
  
     return (   
-      <div className="navbar navbar-expand-md bg-dark navbar-dark text-white ">
+      <div className="navbar navbar-expand-md  navbar-dark  cyborg-navbar">
         <div className="container">
             <a href="#" className="navbar-brand">
               <img src={Logo} alt="" />

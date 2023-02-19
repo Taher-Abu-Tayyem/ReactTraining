@@ -7,10 +7,10 @@ const Navitem = (props) => {
   )
 }
 
-const NavitemDropDown = (props) => {
+const NavItemDropDown = (props) => {
     return (
       <li className='nav-item dropdown'>{props.children}</li>
     )
   }
 export default Navitem
-export {NavitemDropDown}
+export {NavItemDropDown}
