@@ -1,14 +1,13 @@
-import React from "react";
 import './Hero.css'
+import { PeimaryButton,secondaryButton } from '../../components';
 const Hero = () => {
   return (
     <div className="hero-main">
       <div className="hero-text">
         <h6 className="hero-subtitle">welcome to cyborg</h6>
         <h5 className="hero-title"><em>Browse</em> Our Popular Games Here</h5>
-        <div className="main-button">
-          <a href="browse.html">Browse Now</a>
-        </div>
+        <PeimaryButton>Browse Now</PeimaryButton>
+       
       </div>
     </div>
     

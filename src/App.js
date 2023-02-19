@@ -2,7 +2,7 @@
 import './App.css';
 
 import {Container} from './components/index';
-import {Header,Hero,Footer,MostPopular} from './sections/index';
+import {Header,Hero,Footer,MostPopular,GamingLibrary} from './sections/index';
 
 const App=()=> {
   return (
@@ -10,8 +10,9 @@ const App=()=> {
      
     <Header />
     <Container> 
-      <Hero/> 
-      <MostPopular/>
+    <Hero/> 
+    <MostPopular/>
+    <GamingLibrary/>
     </Container>
     <Footer/>
 
