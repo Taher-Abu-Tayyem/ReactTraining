@@ -1,22 +1,26 @@
-
+import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
 import './App.css';
 
-import {Container} from './components/index';
-import {Header,Hero,Footer,MostPopular,GamingLibrary} from './sections/index';
+import {Header,Footer} from './sections/index'
+import { Home ,Profile} from './Pages/index'
+import {Container} from './components/index'
 
 const App=()=> {
   return (
-    <div className="App">
-     
-    <Header />
-    <Container> 
-    <Hero/> 
-    <MostPopular/>
-    <GamingLibrary/>
-    </Container>
-    <Footer/>
+    <>
+     <Router>
+        <Header />
+        <Container> 
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/Profile' element={<Profile/>}/>
+          </Routes>
+        </Container>
+        <Footer/>
+     </Router>
+    
 
-    </div>
+    </>
   );
 }
 
